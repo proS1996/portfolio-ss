@@ -258,7 +258,6 @@ const Resume = () => {
                   ))}
                 </ul>
               </div>
-              about
             </TabsContent>
           </div>
         </Tabs>
