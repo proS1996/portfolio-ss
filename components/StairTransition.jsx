@@ -23,8 +23,11 @@ const StairTransition = () => {
   return (
     <AnimatePresence mode="wait">
       {isVisible && (
-        <div className="fixed inset-0 z-50 pointer-events-none flex">
-          <Stairs key={pathname} />
+        <div
+          key={pathname}
+          className="h-screen w-screen fixed top-0 right-0 pointer-events-none z-40 flex"
+        >
+          <Stairs />
         </div>
       )}
     </AnimatePresence>
