@@ -6,30 +6,30 @@ import { BsArrowDownRight } from "react-icons/bs";
 const services = [
   {
     num: "01",
-    title: "Web Developement",
+    title: "UX/UI Designing",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. os dolores.",
+      "Crafting intuitive and user-friendly interfaces that enhance user experience and drive engagement across web and mobile platforms.",
     href: "",
   },
   {
     num: "02",
-    title: "UI/UX Design",
+    title: "Graphics Designing",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. os dolores.",
+      "Creating visually compelling designs that communicate your brand's message effectively, from logos to marketing materials.",
     href: "",
   },
   {
     num: "03",
-    title: "Logo Design",
+    title: "Motion Graphics & Video Editing",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. os dolores.",
+      "Bringing your ideas to life with dynamic motion graphics that captivate audiences and elevate your digital presence.",
     href: "",
   },
   {
     num: "04",
-    title: "SEO ",
+    title: "Logo, Brand & Illustration Designing ",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. os dolores.",
+      "Developing distinctive logos and cohesive brand identities that resonate with your target audience, ensuring your brand stands out in the marketplace",
     href: "",
   },
 ];
@@ -49,7 +49,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="flex-1 flex flex-col justify-center gap-6 group"
+              className="flex-1 flex flex-col justify-center gap-6 group border-b border-white/20"
             >
               {/* top */}
               <div className="w-full flex justify-between items-center">
@@ -64,13 +64,11 @@ const Services = () => {
                 </Link>
               </div>
               {/* heading */}
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
+              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 leading-normal">
                 {service.title}
               </h2>
               {/* escription */}
               <p className="text-white/60">{service.description}</p>
-              {/* border */}
-              <div className="border-b border-white/20 w-full "></div>
             </div>
           ))}
         </motion.div>

@@ -9,14 +9,17 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { motion } from "framer-motion";
+import { FaFilePowerpoint } from "react-icons/fa";
+
 import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaFigma,
-  FaNodeJs,
-} from "react-icons/fa";
+  SiAdobexd,
+  SiAdobepremierepro,
+  SiAdobeaftereffects,
+  SiAdobeillustrator,
+  SiAdobephotoshop,
+  SiFigma,
+  SiFramer,
+} from "react-icons/si";
 
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
@@ -43,29 +46,24 @@ const experience = {
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, facilis.",
   items: [
     {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
+      company: "Habilelabs Pvt. Ltd., Jaipur",
+      position: "Senior UX Designer & Design Leader",
       duration: "2023 -Present",
     },
     {
-      company: "Web Design Studio",
-      position: "Front-End Developer Intern",
-      duration: "2022 -2023",
+      company: "Paydeer Services Pvt. Ltd., Jaipur",
+      position: "UX UI Manager & Sr. Graphic Designer",
+      duration: "2020 – 2023",
     },
     {
-      company: "E-commerce Startup",
-      position: "Freelance Web Developer",
-      duration: "2021-2022",
+      company: "Testbook.com & Chegg India",
+      position: "Graphic Design & SME",
+      duration: "2017 – 2020",
     },
     {
-      company: "Digital Agency",
-      position: "UI/UX Designer",
-      duration: "2019 -2021",
-    },
-    {
-      company: "Teach Academy",
-      position: "Teaching Assistant",
-      duration: "2016 -2019",
+      company: "Shree Cement Ltd., Pali (Raj.)",
+      position: "Graduate Engineer Trainee (GET)",
+      duration: "2016",
     },
   ],
 };
@@ -78,28 +76,18 @@ const education = {
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, facilis.",
   items: [
     {
-      institute: "Online Course Platform",
-      degree: "Full Stack Web Development Bootcamp",
-      duration: "2023",
+      institute: "Mewar University Raj.",
+      degree: "B.Tech (Civil Engg)",
+      duration: "2012- 2016",
     },
     {
-      institute: "Online Course Platform",
-      degree: "Full Stack Web Development Bootcamp",
-      duration: "2023",
+      institute: "Conducted By IIT Delhi",
+      degree: "GATE Qualified",
+      duration: "2020",
     },
     {
-      institute: "Online Course Platform",
-      degree: "Full Stack Web Development Bootcamp",
-      duration: "2023",
-    },
-    {
-      institute: "Online Course Platform",
-      degree: "Full Stack Web Development Bootcamp",
-      duration: "2023",
-    },
-    {
-      institute: "Online Course Platform",
-      degree: "Full Stack Web Development Bootcamp",
+      institute: "Architecture Cad Centre",
+      degree: "Certified in 3D MAX",
       duration: "2023",
     },
   ],
@@ -110,14 +98,14 @@ const skills = {
   description:
     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, doloremque.",
   skillList: [
-    { icon: <FaHtml5 />, name: "html 5" },
-    { icon: <FaCss3 />, name: "css 3" },
-    { icon: <FaJs />, name: "javascript" },
-    { icon: <FaReact />, name: "react.js" },
-    { icon: <FaNodeJs />, name: "node js" },
-    { icon: <SiNextdotjs />, name: "next js" },
-    { icon: <SiTailwindcss />, name: "tailwind.css" },
-    { icon: <FaFigma />, name: "figma" },
+    { icon: <SiFigma />, name: "Figma" },
+    { icon: <SiAdobexd />, name: "Adobe XD" },
+    { icon: <SiAdobepremierepro />, name: "Premiere Pro" },
+    { icon: <SiAdobeaftereffects />, name: "After Effects" },
+    { icon: <SiAdobeillustrator />, name: "Adobe Illustrator" },
+    { icon: <SiAdobephotoshop />, name: "Adobe Photoshop" },
+    { icon: <SiFramer />, name: "Framer" },
+    { icon: <FaFilePowerpoint />, name: "Power point" },
   ],
 };
 
@@ -170,7 +158,9 @@ const Resume = () => {
                         <div className="flex items-center gap-3">
                           {/* dot */}
                           <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                          <p className="text-white/60">{item.company}</p>
+                          <p className="text-white/60 leading-normal">
+                            {item.company}
+                          </p>
                         </div>
                       </li>
                     ))}
