@@ -1,11 +1,20 @@
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaYoutube, FaTwitter } from "react-icons/fa";
+import { FaFigma } from "react-icons/fa";
+import {
+  SiAdobexd,
+  SiAdobepremierepro,
+  SiAdobeaftereffects,
+  SiAdobeillustrator,
+  SiAdobephotoshop,
+} from "react-icons/si";
 
 const socials = [
-  { icon: <FaGithub />, path: "" },
-  { icon: <FaLinkedin />, path: "" },
-  { icon: <FaYoutube />, path: "" },
-  { icon: <FaTwitter />, path: "" },
+  { icon: <FaFigma />, path: "" },
+  { icon: <SiAdobexd />, path: "" },
+  { icon: <SiAdobepremierepro />, path: "" },
+  { icon: <SiAdobeaftereffects />, path: "" },
+  { icon: <SiAdobeillustrator />, path: "" },
+  { icon: <SiAdobephotoshop />, path: "" },
 ];
 
 const Socials = ({ containerStyles, iconStyles }) => {
